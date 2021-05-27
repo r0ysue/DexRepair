@@ -51,10 +51,12 @@ public class DexUtils {
                 ClassData.Method[] methods = classData.allMethods();
                 for (int i = 0; i < methods.length; i++) {
                     ClassData.Method method = methods[i];
-                    int offsetInstructions = method.getCodeOffset() + 16;
+                    //int offsetInstructions = method.getCodeOffset() + 16;
+                    int offsetInstructions = method.getCodeOffset();
                     int insSize = 0;
                     try {
-                        insSize = dex.readCode(method).getInstructions().length;
+                        //insSize = dex.readCode(method).getInstructions().length;
+                        insSize = dex.readCode(method).getCodeItemSize();
                     }
                     catch (Exception e){
 
