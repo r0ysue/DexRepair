@@ -36,6 +36,10 @@ public final class Code {
         this.catchHandlers = catchHandlers;
     }
 
+    public int getCodeItemSize(){
+        return instructions.length+16+ tries.length + catchHandlers.length;
+    }
+
     public int getRegistersSize() {
         return registersSize;
     }
