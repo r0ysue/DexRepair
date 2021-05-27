@@ -1,7 +1,8 @@
 # DexRepair【Fart10专版】【仅用于Fart10】
 
 适用于FART的dex修复程序
-ThanksTo：@bxl 
+
+**ThanksTo：@bxl**
 
 ## 用法
 
